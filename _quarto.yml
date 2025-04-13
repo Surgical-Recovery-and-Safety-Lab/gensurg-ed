@@ -2,11 +2,20 @@ project:
   type: book
   output-dir: docs
 
+comments:
+  hypothesis: true
+
+
 book:
-  title: "General Surgery Ed - Part 2 Curriculum"
+  title: "General Surgery GOGv2"
   author: "C Varghese"
   chapters:
     - index.qmd
 
-# By default, Quarto will render HTML files to a _book folder.
-# We want them in 'docs' for GitHub Pages.
+format:
+  html:
+    theme: simplex
+    font:
+      text: "Georgia, serif"         # A classic serif for text
+      headings: "Georgia, serif"     # Serif headings for a traditional look
+      code: "Courier New, monospace" # Code blocks in a monospaced font
