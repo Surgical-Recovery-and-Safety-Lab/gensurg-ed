@@ -1,0 +1,348 @@
+---
+title: "Gastric Cancer"
+format: html
+---
+
+# Gastric Cancer
+
+---
+
+## DEFINITION
+
+Primary malignancy of the stomach, often a highly invasive disease associated with high mortality.
+
+[Top](#gastric-cancer) | [D](#definition) | [I](#incidence) | [A](#aetiology) | [B](#biological-behaviour) | [M](#manifestations) | [I](#investigations) | [M](#management) | [Home](home.html)
+
+---
+
+## INCIDENCE
+
+Common worldwide (4th biggest cancer, 2nd biggest killer).  
+Reducing in the West; used to be the highest killer; now about 1/3 what it was 35 years ago (possibly related to *H. pylori*).  
+*Trend:* decreasing in the distal stomach, increasing at the cardia/GOJ, increase in diffuse type (represents about 30% of neoplasms).
+
+**Geography:**  
+Relatively low in the West; high in Southeast Asia, Japan (decreasing with Westernization), Russia, and South America.  
+2–4× higher in Polynesians.
+
+**Sex:**  
+Approximately M2:F1.
+
+**Age:**  
+Mean age is in the 60s at discovery. Rare under 40 except in familial forms.
+
+[Top](#gastric-cancer)
+
+---
+
+## AETIOLOGY
+
+Gastric cancer is about 90% adenocarcinomas, with 10% being other types (mainly lymphoma or GIST). Occasionally, squamous cell carcinoma, oat cell carcinoma, carcinoid, or mesodermal tumors occur.
+
+### AdenoCa Predisposing Factors
+
+#### Genetic
+- **Familial Gastric Cancer:**  
+  1. Hereditary diffuse gastric cancer  
+     - Two or more cases in first/second-degree relatives; one diagnosed before age 50  
+     - Three or more cases independent of age  
+     - *E-cadherin* gene inactivating mutation (especially common in Māori)  
+  2. Familial diffuse gastric cancer  
+  3. Familial intestinal gastric cancer  
+
+#### Inflammatory
+Chronic gastritis is the usual background.  
+- **H. pylori** is the main cause (3–4× risk if infected).  
+  - Risk is proportionate to *H. pylori* serum levels.  
+  - Leads to atrophy of the gastric mucosa (decreased acidity, increased bacterial overgrowth producing toxins) and is associated with pernicious anemia and chronic peptic ulcers.  
+  - Though *H. pylori* is very significant, only about 1% are associated purely by virtue of chronic inflammatory change.
+
+#### Nutritional
+- Vitamin C deficiency  
+- Low fruit and vegetable intake, high starch diet
+
+#### Toxins
+- Smoking  
+- Dietary toxins (nitrosamines, possible polycyclic hydrocarbons, from dried, smoked, and salted food)
+
+#### Iatrogenic
+- Previous gastric surgery  
+  - Approximately 2% risk of cancer at a gastroduodenal anastomosis  
+  - Typically 15–20 years after surgery (young surgical patients are at risk)  
+  - Chronic gastritis, atrophy, fundic gland polyps, and hyperplastic polyps are more common in the gastric remnant  
+  - Both intestinal and diffuse types occur (about 40% early)
+
+#### Other
+- Also seen more in people with blood group A  
+- Menetrier’s Disease (rare): Rugal hypertrophy and hyperplasia, hypochlorhydria, and protein-losing enteropathy; cancer occurs in about 10%, often diagnosed within 12 months of each other.
+
+[Top](#gastric-cancer)
+
+---
+
+## BIOLOGICAL BEHAVIOUR
+
+### Pathology
+
+* **Adenocarcinoma:**  
+  - **Lauren Classification:**  
+    - *Intestinal*: Well differentiated (mucosal origin)  
+    - *Diffuse*: Poorly differentiated (lamina propria origin)
+
+1. **Intestinal** (approximately 20% 5‑year survival)  
+   - Associated with chronic gastritis, intestinal metaplasia, and *H. pylori*.  
+   - Typically well differentiated and expansile.  
+   - More common in high‐risk populations (M > F 2:1; older patients; declining overall incidence).  
+   - Tends to form glands and metastasizes via the bloodstream.
+
+2. **Diffuse** are ominous (about 10% 5‑year survival)  
+   - Lacks mucous-secreting elements; unclear cause; may be genetic or related to *H. pylori*.  
+   - Typically poorly differentiated and infiltrative.  
+   - More common in women and younger patients; may have a stronger genetic determination.  
+   - Spreads via submucosal infiltration.
+
+### Pathogenesis
+
+_Classical development theorized as:_  
+- *H. pylori* infection  
+- Acute gastritis  
+- Chronic active gastritis  
+- Atrophic gastritis  
+- Intestinal metaplasia  
+- Dysplasia  
+- Gastric cancer  
+
+(Note: About 60–70% of mild-moderate dysplasia may revert to normal; severe dysplasia is much more likely to progress. This model applies mainly to the intestinal type.)
+
+### Natural History
+
+- Arises in the mucosa.  
+- **Early Gastric Cancer:**  
+  - Confined to the mucosa or submucosa regardless of lymph node involvement.  
+  - 5‑year survival is good (≈90%) when detected early; however, early detection in the West is only around 10%.  
+  - In Japan, screening with double-contrast barium meal and endoscopy leads to early detection (≈30%).  
+  - Tumors less than 5 mm may be termed “minute”.  
+  - Lymph node risk is <5% with mucosal disease; about 20% with submucosal invasion.  
+  - Higher risk with ulceration and larger tumors.
+
+- **Early Gastric Cancer Macroscopic Classification:**
+  - **Type I:** Protuberant  
+    - Sessile, smooth nodules with a broad stalk, often pale.
+  - **Type II:** Superficial  
+    - Variants: elevated, flat, or depressed.
+  - **Type III:** Ulcerating  
+    - Exophytic tumors have a better prognosis (often intestinal type); ulcerating tumors tend to be diffuse.
+
+- **Location:**  
+  - Most common in the antrum (40%); diffuse cancers of the proximal stomach (30%) are increasing in the West.  
+  - Invasion into the duodenum is a poor prognostic sign (with 5‑year survival approaching 5%).
+
+- **Spread:**  
+  - Intramural, direct extraluminal growth, lymphatic, and distant metastases.  
+  - Regional nodes are involved in at least 75% of cases at presentation.  
+  - Intragastric spread is often more proximal than distal.  
+  - The pylorus acts as a partial barrier (tumors may extend beyond in 25% of cases).  
+  - Later, metastasis to the liver, bone, brain, and lung may occur.  
+  - Advanced disease has a 5‑year survival rate below 15%.
+
+- **Borrmann Classification (Subtypes):**  
+  Four subdivisions correlate loosely with natural history and outcome (in order of increasing aggressiveness):  
+  - *Type I:* Polypoid carcinomas – large, bulky intraluminal growths that tend to metastasize late; often soft and red.  
+  - *Type II:* Ulcerating/excavated carcinoma – deep, penetrating ulcer-tumor with flat or rolled edges.  
+  - *Type III:* Ulcerative with elevated margins (infiltrative).  
+  - *Type IV:* Linitis plastica type – diffuse thickening of all layers with a marked desmoplastic reaction; cure is rare and advanced spread is common.
+
+There is also a lymphoepithelioma-like carcinoma (often associated with EBV) that has a relatively good prognosis.
+
+### Genetics
+
+- Disruption of the genome, involvement of oncogenes, and mutations in tumor-suppressor genes.  
+- **p53** is the most common abnormality (involved in preserving genome stability).  
+- If not p53, then microsatellite instability is typically seen.  
+- **APC** and **DCC** genes are also commonly affected.  
+- Reduced expression of **E-cadherin** (cellular adhesion molecule) is seen in about 90% of cases, especially in diffuse types.  
+- Familial clustering can be observed in conditions like HNPCC and familial gastric cancer.
+
+[Top](#gastric-cancer)
+
+---
+
+## MANIFESTATIONS
+
+### Symptoms
+
+**Local:**  
+- Often asymptomatic when superficial and curable.  
+- As the disease advances, symptoms may include:
+  - Vague non-specific symptoms (e.g., early satiety, a sense of heaviness, pain that may not be obvious).
+  - Severe, steady abdominal pain (often slight and sometimes relieved by food).
+
+Additional local symptoms:  
+- Anorexia (often with meat consumption), dyspepsia, nausea, vomiting (severe if near the pylorus), and altered bowel habits.  
+- Less frequently, dysphagia (if the tumor involves the cardia).  
+- Hemorrhage (haematemesis/melena) and perforation may also occur.
+
+**General:**  
+- Weight loss, loss of strength, and general malaise.  
+- Frequently accompanied by anemia.
+
+**Metastatic:**  
+- Symptoms due to local spread involving lymph nodes, liver, bones, brain, or lung.
+
+### Signs
+
+**Observation:**  
+- Jaundice, cachexia, and anemia.  
+- Signs of metastasis may include abnormalities in the liver, bone, brain, or lung.  
+- Associated conditions include dermatomyositis and acanthosis nigricans (thickened, hyperpigmented skin at flexures).
+
+**Palpation:**  
+- A palpable tumor usually indicates advanced disease.  
+- Virchow’s node (left supraclavicular fossa) or Sister Mary Joseph nodule may be present.  
+- A large liver or malignant ascites may be noted.  
+- In advanced disease, Blumer’s shelf (pre-rectal metastases) may be palpable.
+
+- Always consider metastases to the lungs, bone, and brain.
+
+[Top](#gastric-cancer)
+
+---
+
+## INVESTIGATIONS
+
+### Endoscopy
+- Gastroscopic biopsy is the standard (with at least 6 biopsies for ulcers).  
+- Gastric cancer ulcers are suspicious.  
+- *Role of Endoscopic Ultrasound (EUS):*  
+  - Can demonstrate tumor depth (≈80% accuracy) and lymph node involvement (≈50% accuracy).  
+  - Particularly useful for differentiating T2 tumors, which may need neoadjuvant chemotherapy and could be amenable to endoscopic mucosal resection (EMR) in specialized centers.
+
+### Imaging
+- Staging relies on CT scanning, EUS, and laparoscopy.  
+- CT can reveal metastatic disease.  
+- An abdominal X-ray (AXR) may show a rigid stomach (“leather bottle” appearance).  
+- Double-contrast barium meal study is also used.
+- **Staging Laparoscopy:**  
+  - Highly advisable; usually performed as a day stay procedure.  
+  - Can detect peritoneal metastatic disease in about 30% of patients with normal cross-sectional imaging.  
+  - Collection of peritoneal washings is performed; a positive result predicts early peritoneal recurrence and, if negative (even without visible metastases), survival decreases from 98.5 months to 14.8 months.
+
+### Role of PET
+- Less useful in gastric cancer because many tumors are not FDG avid (only about 60% positive compared to ~90% in esophageal cancers).  
+- More likely to be positive in intestinal-type tumors compared to diffuse/signet-ring types.
+
+### Haematology
+- Leucocytosis is possible.  
+- Occult blood (FOB) test may be positive in about 50% of cases.
+
+### Markers
+- Carcinoembryonic antigen (CEA) is positive in about 65% of cases, usually in those with extensive disease.
+
+### Histology
+- Dysplasia is generally divided into low-grade and high-grade based on cytological and architectural features.
+  - Glandular differentiation is more favorable than diffuse type.  
+  - Diffuse type often has a substantial stromal component.  
+  - “Signet ring” type is poorly differentiated, more common in women and younger patients.  
+  - Lymphovascular invasion is an important prognostic indicator.
+
+### Staging
+
+#### TNM Classification
+
+**Tumor (T):**
+- **Tx:** Unassessable
+- **T0:** No primary tumor evident
+- **Tis:** In situ (intraepithelial; not invading lamina propria)
+- **T1:** Invades lamina propria or submucosa
+- **T2:** Invades muscularis (T2a) or subserosa (T2b)
+- **T3:** Invades serosa/visceral peritoneum (but not adjacent structures)
+- **T4:** Invades adjacent structures
+
+**Nodes (N):**
+- **Nx:** Unassessable  
+- **N0:** No regional nodes  
+- **N1:** 1–6 regional nodes  
+- **N2:** 7–15 nodes  
+- **N3:** More than 15 nodes  
+  _(At least 15 nodes should be present in the specimen for accurate staging.)_
+
+**Metastases (M):**
+- **Mx:** Unassessable  
+- **M0:** No metastases  
+- **M1:** Distant metastases
+
+**Staging Summary:**
+
+| Stage  | Description                            |
+| ------ | -------------------------------------- |
+| Tis    | In situ                                |
+| IA     | T1N0M0                                 |
+| IB     | T1N1M0 or T2a/bN0M0                     |
+| II     | T1N2M0, T2N1M0, or T3N0M0                |
+| IIIA   | T2N2M0, T3N1M0, or T4N0M0                |
+| IIIB   | T3N2M0                                 |
+| IV     | T4N1-3M0, T1-3N3M0, or any T, any N, M1   |
+
+[Top](#gastric-cancer)
+
+---
+
+## MANAGEMENT
+
+A multidisciplinary approach is essential, involving gastroenterologists, surgeons, oncologists, and radiologists.
+
+### Screening
+- Conducted in Japan using mobile X-ray units and double-contrast studies, which have improved early diagnosis and survival rates.
+- However, overall benefit is minimal and not sufficiently feasible for all dyspeptic patients.
+
+### Surgical Principles
+- Surgical excision remains the cornerstone of curative therapy.
+- Only possible in less than 25% of cases.
+- Aim for an **R0 resection** (clear margins) with radical lymphadenectomy and a 5 cm margin (due to submucosal spread).
+
+*What to do with R1 resection?*  
+- There is controversy; decision should be based on the patient's overall condition and treatment goals.  
+- If the tumor is early, with good lymph node status, and the patient is fit for surgery, re-resection may be considered.
+
+**Procedure:**  
+See the [Gastrectomy](Gastrectomy.html) page for details.
+
+**Role of Proximal Partial Gastrectomy:**  
+- Generally avoided due to intractable reflux issues.
+
+**Extent of Lymphadenectomy:**  
+- **D0:** No nodes (palliative resection)  
+- **D1:** Excision of perigastric nodes  
+- **D2:** Excision of nodes along the trunks of the coeliac axis  
+  - D2 resection is standard in Japan, where evidence supports its use, but many Western surgeons remain skeptical because of higher morbidity.  
+  - Trials have shown mixed results regarding survival benefits versus higher complications when extended resections are performed.  
+  - Aggressive lymphadenectomy helps with accurate staging and may improve survival if at least 15 nodes are examined.
+
+**Neoadjuvant Therapy:**  
+- More than one third of patients cannot tolerate postoperative chemotherapy; preoperative (neoadjuvant) chemo is better tolerated.  
+- It allows for assessment of tumor response and downstaging.  
+- The MAGIC trial demonstrated that perioperative chemotherapy (epirubicin, cisplatin, 5-FU) improved overall and progression-free survival as well as resectability.
+
+**Prognosis:**  
+- Refer to prognostic nomograms (e.g., from Cameron’s work) which consider: age, sex, primary tumor site, Lauren classification, size, nodal involvement, and depth of invasion.
+
+**Palliation:**  
+- For many elderly patients with advanced lymphatic spread, surgery is contraindicated.  
+- Palliation focuses on relieving pain and dysphagia, and may include mild chemotherapy (e.g., 5-fluorouracil and cisplatin).  
+- Gastric cancer is generally radioresistant, although radiotherapy can play a role in symptom palliation.
+
+[Top](#gastric-cancer)
+
+---
+
+## REFERENCES
+
+- Cameron
+
+---
+
+*Note:* The navigation links (e.g., [Top](#gastric-cancer)) have been inserted as inline links. You can adjust these or use a table of contents if desired.
+
+---
+
+This Markdown version preserves the structure and key details of your original HTML while providing a more modern, readable format for use in your Quarto project. Feel free to further adjust formatting (for example, adding more subheadings or tweaking bullet points) to best suit your styling requirements.

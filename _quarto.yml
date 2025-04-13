@@ -11,11 +11,5 @@ book:
   author: "C Varghese"
   chapters:
     - index.qmd
+    - Gastric_Cancer.qmd
 
-format:
-  html:
-    theme: simplex
-    font:
-      text: "Georgia, serif"         # A classic serif for text
-      headings: "Georgia, serif"     # Serif headings for a traditional look
-      code: "Courier New, monospace" # Code blocks in a monospaced font
