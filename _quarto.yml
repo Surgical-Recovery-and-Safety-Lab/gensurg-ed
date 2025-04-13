@@ -1,5 +1,12 @@
 project:
-  title: "gensurg-ed"
+  type: book
 
-editor: visual
+book:
+  title: "General Surgery Ed - Part 2 Curriculum"
+  author: "C Varghese"
+  chapters:
+    - index.qmd
 
+# By default, Quarto will render HTML files to a _book folder.
+# We want them in 'docs' for GitHub Pages.
+output-dir: docs
