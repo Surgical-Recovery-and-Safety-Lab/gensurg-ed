@@ -109,6 +109,7 @@ const els = {
   tabs:           document.querySelector(".workspaceTabs"),
   template:       document.querySelector("#resultTemplate"),
   themeToggle:    document.querySelector("#themeToggle"),
+  eyebrow:        document.querySelector("#workspaceEyebrow"),
   studyStats:     document.querySelector("#studyStats"),
   statusBtn:      document.querySelector("#statusBtn"),
   statusMenu:     document.querySelector("#statusMenu"),
@@ -411,6 +412,7 @@ function openNote(path, title, options = {}) {
   els.frame.src = src;
   els.viewerTitle.textContent = title || docTitle(state.activePath);
   progress.addRecent(state.activePath, title || docTitle(state.activePath));
+  state._lastRetrieveQuery = null; // allow Retrieve tab to re-seed on next open
   markActiveToc();
   refreshWorkspaceHeader();
   if (options.showNotes !== false) activateTab("notes");
@@ -642,6 +644,20 @@ function activateTab(name) {
   document.querySelectorAll(".tabPane").forEach(pane => {
     pane.classList.toggle("active", pane.dataset.pane === name);
   });
+
+  // Update workspace eyebrow label
+  const eyebrowLabels = { notes: "Notes", questions: "Questions", retrieve: "Retrieve" };
+  if (els.eyebrow) els.eyebrow.textContent = eyebrowLabels[name] || name;
+
+  // When switching to Retrieve with no existing query, seed it from the current note
+  if (name === "retrieve" && state.activePath !== "data/index.html") {
+    const currentTitle = docTitle(state.activePath);
+    if (!els.question.value.trim() || els.question.value.trim() === state._lastRetrieveQuery) {
+      els.question.value = currentTitle;
+      state._lastRetrieveQuery = currentTitle;
+      runSearch(currentTitle, { openTopResult: false, activateRetrieve: false });
+    }
+  }
 }
 
 function rankChunks(query) {

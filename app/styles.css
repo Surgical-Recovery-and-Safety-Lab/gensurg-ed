@@ -254,7 +254,8 @@ kbd {
 .searchResults button {
   width: 100%;
   min-height: 30px;
-  padding: 5px 8px;
+  padding: 5px 8px 5px 8px;
+  padding-right: 52px;
   border: 0;
   border-radius: 6px;
   background: transparent;
@@ -263,7 +264,10 @@ kbd {
   cursor: pointer;
   font-size: 13px;
   transition: background 0.12s;
-  padding-right: 52px;
+  /* prevent long titles from pushing past the badge area */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .tocItem.depth1 button { color: #244a78; font-size: 12px; }
