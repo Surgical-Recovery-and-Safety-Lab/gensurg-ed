@@ -13,9 +13,6 @@ __pycache__/
 .venv/
 env/
 
-# Generated — rebuild with: python3 scripts/build_index.py
-app/search-index.json
-
 # Editor
 .vscode/
 .idea/

@@ -6,7 +6,10 @@
     "enabled": true
   },
   "assets": {
-    "directory": "app"
+    // Serve the whole repo root so /data/ and /app/ are both reachable.
+    // The app lives at /app/ and iframes load notes from /data/.
+    "directory": ".",
+    "not_found_handling": "404-page"
   },
   "compatibility_flags": [
     "nodejs_compat"
