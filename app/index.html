@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GOG-NOTES — FRACS Part 2</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <aside class="sidebar" aria-label="Structured notes table of contents">
+        <div class="brand">
+          <span class="mark" aria-hidden="true">GN</span>
+          <div class="brandText">
+            <h1>GOG-NOTES</h1>
+            <p class="subtitle">FRACS Part 2 Study Resource</p>
+            <p class="authors">Greg O'Grady · Chris Varghese</p>
+          </div>
+          <button id="themeToggle" class="iconBtn" title="Toggle dark mode" aria-label="Toggle dark mode">
+            <span class="themeIcon">☀</span>
+          </button>
+        </div>
+
+        <div class="statsBar">
+          <span id="studyStats" class="statItem"></span>
+          <span id="indexStatus" class="statItem">Loading…</span>
+        </div>
+
+        <label class="searchBox">
+          <span>Find a note <kbd>/</kbd></span>
+          <input id="globalSearch" type="search" placeholder="appendicitis, thyroid, trauma" autocomplete="off">
+        </label>
+
+        <div id="bookmarkSection" class="bookmarkSection" hidden>
+          <details class="tocSection bookmarks" open>
+            <summary>Bookmarks</summary>
+            <div id="bookmarkList" class="tocItems"></div>
+          </details>
+        </div>
+
+        <nav id="topicList" class="topicList" aria-label="Notes table of contents"></nav>
+
+        <details id="recentSection" class="tocSection recentSection" hidden>
+          <summary>Recently viewed</summary>
+          <div id="recentList" class="tocItems"></div>
+        </details>
+      </aside>
+
+      <section class="workspace">
+        <section class="workspacePanel" aria-label="Study workspace">
+          <div class="workspaceHeader">
+            <div>
+              <p class="eyebrow">Notes</p>
+              <h2 id="viewerTitle">Surgery Notes</h2>
+            </div>
+            <div class="workspaceActions">
+              <div class="statusSelector" title="Fact-check status for this note">
+                <button id="statusBtn" class="statusBtn" type="button" data-status="unreviewed">
+                  <span class="statusDot"></span><span id="statusLabel">Unreviewed</span>
+                </button>
+                <div class="statusMenu" id="statusMenu" hidden role="menu">
+                  <button type="button" data-status="unreviewed" role="menuitem">● Unreviewed</button>
+                  <button type="button" data-status="verified" role="menuitem">✓ Verified</button>
+                  <button type="button" data-status="needs-review" role="menuitem">⚠ Needs review</button>
+                  <button type="button" data-status="incorrect" role="menuitem">✗ Incorrect</button>
+                </div>
+              </div>
+              <button id="bookmarkBtn" type="button" class="iconBtn" title="Bookmark this note (B)" aria-label="Bookmark">☆</button>
+              <button id="studiedBtn" type="button" class="studiedBtn" title="Mark as studied (M)">Mark studied</button>
+              <button id="openHome" type="button" title="Open notes index (H)" class="ghostBtn">Home</button>
+            </div>
+          </div>
+
+          <div class="workspaceTabs" role="tablist" aria-label="Workspace mode">
+            <button class="active" type="button" data-tab="notes" role="tab" aria-selected="true">Notes</button>
+            <button type="button" data-tab="questions" role="tab" aria-selected="false">Questions</button>
+            <button type="button" data-tab="retrieve" role="tab" aria-selected="false">Retrieve</button>
+          </div>
+
+          <section class="tabPane active" id="notesPane" data-pane="notes" aria-label="Original notes reader">
+            <iframe id="noteFrame" title="Original FRACS note" src="../data/index.html"></iframe>
+          </section>
+
+          <section class="tabPane" id="questionsPane" data-pane="questions" aria-label="Topic questions and MCQ practice">
+            <div class="tabHeader">
+              <div>
+                <p class="eyebrow">Questions</p>
+                <h3>Topic questions and MCQ practice</h3>
+              </div>
+              <button id="makeQuiz" type="button">Build MCQs</button>
+            </div>
+            <div id="mcqOutput" class="mcqOutput">
+              <p class="empty">Open a topic to pull out questions, or retrieve notes and build MCQs.</p>
+            </div>
+          </section>
+
+          <section class="tabPane" id="retrievePane" data-pane="retrieve" aria-label="Retrieve notes">
+            <div class="tabHeader">
+              <div>
+                <p class="eyebrow">Retrieve Notes</p>
+                <h3>Ask against the note set</h3>
+              </div>
+            </div>
+            <form id="questionForm" class="questionForm">
+              <textarea id="questionInput" rows="3" placeholder="Ask a fellowship-style question, e.g. management of complicated appendicitis"></textarea>
+              <div class="formActions">
+                <label class="toggle">
+                  <input id="strictToggle" type="checkbox" checked>
+                  <span>Use only cited notes</span>
+                </label>
+                <button type="submit">Retrieve</button>
+              </div>
+            </form>
+            <section id="answerPanel" class="answerPanel" aria-live="polite"></section>
+            <div id="results" class="resultsList"></div>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <div id="shortcutHint" class="shortcutHint" hidden>
+      <div class="shortcutGrid">
+        <kbd>/</kbd><span>Search</span>
+        <kbd>B</kbd><span>Bookmark</span>
+        <kbd>M</kbd><span>Mark studied</span>
+        <kbd>H</kbd><span>Home</span>
+        <kbd>Esc</kbd><span>Close / clear</span>
+      </div>
+    </div>
+
+    <template id="resultTemplate">
+      <article class="result">
+        <button class="resultTitle" type="button"></button>
+        <p class="resultMeta"></p>
+        <p class="resultText"></p>
+        <div class="resultTags"></div>
+      </article>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>

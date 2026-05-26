@@ -1,0 +1,804 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta content="text/html; charset=windows-1252"
+      http-equiv="content-type">
+    <title>Weight / Nutrition</title>
+  </head>
+  <body>
+    <div style="text-align: center;"><span style="font-weight: bold;">Weight
+and
+
+
+        Nutrition</span><br>
+    </div>
+    <hr style="width: 100%; height: 2px;"><a href="#Introduction">Introduction</a><br>
+    <a href="#Body_Composition">Body composition</a><br>
+    <a href="#Nutrient_Requirements">Nutrition Requirements</a><br>
+    <a href="#Regulating_Energy_Balance">Regulating Energy Balance</a><br>
+    <a href="#Starvation">Starvation</a><br>
+    <a href="#Failure">Gastrointestinal Failure</a><br>
+    <a href="#Injury">Nutrition in Injury &amp; SIRS</a><br>
+    <a href="#Assessing_Weight_Chan">Assessing Weight Change</a><br>
+    <a href="#Weight_Loss_Causes">Causes of Weight Loss</a><br>
+    <a href="#Weight_Gain">Causes of Weight Gain</a><br>
+    <a href="#Treating_Weight_Loss">Treating Nutrition Deficit</a><br>
+    <span style="color: rgb(153, 0, 0);">&nbsp;&nbsp; *</span><a
+      href="#Algorithm">Hill's algorithm</a><span style="color: rgb(153,
+      0, 0);"></span><br>
+    <hr style="width: 100%; height: 2px;"><span style="font-weight:
+      bold;"><a name="Introduction"></a>Introduction</span><br>
+    <br>
+    <span style="font-style: italic;">Malnutrition is common in the
+      surgical pt.</span><br>
+    - 50% of general surgical pts may suffer protein-energy malnutrition
+    (PEM) (marasmus)<br>
+    - &gt;20% wgt loss was shown to increase gastrectomy mortality (for
+    benign disease) by 10-fold.<br>
+    - the morbidity of starvation should not be added to the sick pt.<br>
+    - although NG feeds have been practiced since 1598 and jejunostomy
+    &gt;100yrs ago, only recently have metabolic needs been addressed.<br>
+    <br>
+    In many pts, eg SIRS, there may by <span style="font-style:
+      italic;">impaired utilisation</span> of substrates rather than
+    deficiency.<br>
+    - only treating the underlying cause will be fully effective<br>
+    <br>
+    <span style="font-style: italic;">Nutritional support should be
+      considered for every pt</span><br>
+    - who is unable to resume adequate diet for more than 3-4 days<br>
+    - and in every critically ill pt.<br>
+    - response is slow: 2 weeks needed preop to address needs of a
+    starving pt.<br>
+    - the financial costs are enormous.<br>
+    <hr style="width: 100%; height: 2px;"><span style="font-weight:
+      bold;"><a name="Body_Composition"></a>Body Composition</span><br>
+    <span style="font-style: italic;"></span><br>
+    <table style="width: 100%; text-align: left;" border="1"
+      cellpadding="2" cellspacing="2">
+      <tbody>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(255,
+            153, 0);"><br>
+          </td>
+          <td style="vertical-align: top; text-align: center;
+            font-weight: bold; background-color: rgb(255, 153, 0);">70kg
+            male<br>
+          </td>
+          <td style="vertical-align: top; text-align: center;
+            font-weight: bold; background-color: rgb(255, 153, 0);">60kg
+            fem<br>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; font-weight: bold;
+            background-color: rgb(255, 255, 153);">Water<br>
+          </td>
+          <td style="vertical-align: top; text-align: center;
+            background-color: rgb(255, 255, 153);">60%<br>
+          </td>
+          <td style="vertical-align: top; text-align: center;
+            background-color: rgb(255, 255, 153);">53%<br>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; font-weight: bold;
+            background-color: rgb(255, 255, 153);">Fat<br>
+          </td>
+          <td style="vertical-align: top; text-align: center;
+            background-color: rgb(255, 255, 153);">18%<br>
+          </td>
+          <td style="vertical-align: top; text-align: center;
+            background-color: rgb(255, 255, 153);">26%<br>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; font-weight: bold;
+            background-color: rgb(255, 255, 153);">Protein<br>
+          </td>
+          <td style="vertical-align: top; text-align: center;
+            background-color: rgb(255, 255, 153);">16%<br>
+          </td>
+          <td style="vertical-align: top; text-align: center;
+            background-color: rgb(255, 255, 153);">16%<br>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; font-weight: bold;
+            background-color: rgb(255, 255, 153);">Carbs<br>
+          </td>
+          <td style="vertical-align: top; text-align: center;
+            background-color: rgb(255, 255, 153);">0.7%<br>
+          </td>
+          <td style="vertical-align: top; text-align: center;
+            background-color: rgb(255, 255, 153);">0.5%<br>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; font-weight: bold;
+            background-color: rgb(255, 255, 153);">Mineral<br>
+          </td>
+          <td style="vertical-align: top; text-align: center;
+            background-color: rgb(255, 255, 153);">5.2%<br>
+          </td>
+          <td style="vertical-align: top; text-align: center;
+            background-color: rgb(255, 255, 153);">4.5%<br>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; font-weight: bold;
+            background-color: rgb(255, 255, 153);">Vits<br>
+          </td>
+          <td style="vertical-align: top; text-align: center;
+            background-color: rgb(255, 255, 153);">trace<br>
+          </td>
+          <td style="vertical-align: top; text-align: center;
+            background-color: rgb(255, 255, 153);">trace<br>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <span style="font-style: italic;">Fat is the most variable</span><br>
+    - change in weight acutely = hydration change.<br>
+    - slower = energy / protein change.<br>
+    <hr style="width: 100%; height: 2px;"><span style="font-weight:
+      bold;"><a name="Nutrient_Requirements"></a>Nutrient Requirements</span><br>
+    <br>
+    <table style="width: 100%; text-align: left;" border="1"
+      cellpadding="2" cellspacing="2">
+      <tbody>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(255,
+            153, 0);"><br>
+          </td>
+          <td style="vertical-align: top; font-weight: bold;
+            background-color: rgb(255, 153, 0);">Normal</td>
+          <td style="vertical-align: top; font-weight: bold;
+            background-color: rgb(255, 153, 0);">Stressed<br>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; font-weight: bold;
+            background-color: rgb(255, 255, 153);">kcal/kg/day<br>
+          </td>
+          <td style="vertical-align: top; background-color: rgb(255,
+            255, 153);">25-30<br>
+          </td>
+          <td style="vertical-align: top; background-color: rgb(255,
+            255, 153);">35-40<br>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; font-weight: bold;
+            background-color: rgb(255, 255, 153);">protein g/kg/day<br>
+          </td>
+          <td style="vertical-align: top; background-color: rgb(255,
+            255, 153);">1.0<br>
+          </td>
+          <td style="vertical-align: top; background-color: rgb(255,
+            255, 153);">1.3-2.0<br>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    - varies by weight, age, sex, activity, clinical status<br>
+    - individual needs vary two or three fold.<br>
+    <br>
+    <span style="font-style: italic; text-decoration: underline;">Diets
+      consist of</span>: water, fat, carbs, protein, minerals, vitamins,
+    trace elements, fibre.<br>
+    - ie fluids/electrolytes, macronutrients, micronutrients.<br>
+    - carbs supply 4.2kcal / g<br>
+    - protein supplies 4.2 also, but 30% conversion cost<br>
+    - lipid supplies 9.1kcal/g.<br>
+    - normal adult eats 50g of protein each day<br>
+    --&gt; although some are essential and some aren't so this
+    requirement is not exact<br>
+    <br>
+    When prescribing <span style="font-style: italic; text-decoration:
+      underline;">macronutrients</span><span style="text-decoration:
+      underline;">,</span> energy requirements parallel protein
+    requirements.<br>
+    - elements cannot be separated.<br>
+    - hence fixed ratio of supplements, eg 150 kcal/1gN<br>
+    - overall requirement expressed as energy content rather than
+    protein content.<br>
+    <br>
+    Diet-wise, <span style="font-style: italic;">fat</span> should be
+    &lt;35% energy intake<br>
+    - however in artificial feeds, fat content is higher to reduce
+    osmolality<br>
+    - few short term consequences<br>
+    - high fat justified in stress state where it is a good oxidative
+    fuel and where carbs cause hyperglycaemia<br>
+    <br>
+    <span style="font-style: italic; text-decoration: underline;">Micronutrients</span><br>
+    <span style="font-style: italic;">DEKA vitamins </span>are
+    fat-soluble.<br>
+    <span style="font-style: italic;">B and C</span> are water soluble.<br>
+    - in stress states, water-soluble v. requirements higher.<br>
+    Beware <span style="font-style: italic;">hypokalaemia /
+      hypophosphataemia</span> in refeeding the starved<br>
+    - strong uptake of these elements occurs in anabolism.<br>
+    <br>
+    <span style="font-style: italic;">Trace elements</span> rarely
+    problematic except in long-term parenteral nutrition pts.<br>
+    - these include zinc, copper, manganese, iodine, chromium, iron,
+    cobalt, selenium and molybdenum.<br>
+    <hr style="width: 100%; height: 2px;"><a
+      name="Regulating_Energy_Balance"></a><span style="font-weight:
+      bold;">Regulating Energy Balance</span><br>
+    <br>
+    <span style="font-style: italic;">Altering food intake</span> or <span
+      style="font-style: italic;">energy spent</span> changes weight.<br>
+    - usually in disease lack of food intake is dominant cause of
+    negative energy balance<br>
+    - energy spent at rest may rise in the ill, but usually &lt;20%
+    baseline.<br>
+    <br>
+    <span style="font-style: italic;">Food intake</span><br>
+    Altered by GI state, money, psychological, appetite and satiety
+    factors.<br>
+    - dietary components and hormones eg insulin affect appetite.<br>
+    - inflammatory mediators (IL-1, TNF) suppress weight.<br>
+    - leptin recently described: protein in adipose, suppresses appetite
+    perhaps via altering CRH (inhibitory) to neuropeptide-Y
+    (stimulating) ratio in hypothalamis<br>
+    - leptin influenced by diet taken and bodily adipose mass, hence
+    leading candidate to explain stable weight of most adults.<br>
+    <hr style="width: 100%; height: 2px;"><span style="font-weight:
+      bold;"><a name="Starvation"></a>Starvation</span><br>
+    <br>
+    <span style="font-style: italic;">Within 12 hours</span><br>
+    - all food ingested from previous meal is likely to have been
+    consumed.<br>
+    - plasma insulin is low, plasma glucagon rising.<br>
+    - liver glycogen is the major source of brain glucose (obligate
+    requirement of 100g glucose per day)<br>
+    - liver glycogen is converted to lactate, then moved to liver for
+    glucose production (<span style="font-style: italic;">Cori cycle).</span><br>
+    --&gt; soon after, muscle protein breakdown begins to contribute
+    amino acids for glucose production in the liver.<br>
+    <br>
+    <span style="font-style: italic;">At 48 hours</span><br>
+    Skeletal muscle, the most labile protein reserve, is rapidly
+    auto-cannibalizing.<br>
+    - approximately 75g of muscle protein broken down each day for
+    hepatic gluconeogenesis.<br>
+    - glycerol and trig's are broken down to make fatty acids: the main
+    metabolic fuel for most cells. <br>
+    - a-acids in gut may also be used, leading to physiological atrophy
+    and gut barrier dysfunction in the critically ill.<br>
+    <br>
+    <span style="font-style: italic;">More prolonged fasting</span><br>
+    A series of metabolic adjustments occur to preserve body protein.<br>
+    - a gradual fall in T4--&gt;T3 conversion drops energy requirement
+    to around 1500 kcal/day.<br>
+    - most importantly, liver begins to produce acetoacetate and
+    B-hydroxybuterate from fatty acids, sparing 55g/day of muscle
+    protein. <span style="font-style: italic;"><br>
+      - "Keto-adaptation"; </span>ketone bodies can be used as brain
+    fuel.<br>
+    --&gt; this is <span style="font-style: italic;">conspicuously
+      absent</span> in the critically ill <span style="font-style:
+      italic;">where there is insulin resistance</span>.<br>
+    <hr style="width: 100%; height: 2px;"><span style="font-weight:
+      bold;">Gastrointestinal <a name="Failure"></a>Failure<br>
+    </span><br>
+    <span style="text-decoration: underline;"><span style="font-style:
+        italic;">Definition</span></span><br>
+    When the functioning intestinal mass of the pt is reduced below that
+    minimal amount required for digestion.<br>
+    Is the end result of many disorders:<br>
+    - sometimes acute and reversible, eg SBO<br>
+    - sometimes chronic and irreversible eg short gut syndrome<br>
+    <br>
+    <span style="font-style: italic;">Underlying diseases<br>
+    </span>Crohn's<br>
+    Pancreatitis<br>
+    PUD<br>
+    Mesenteric vascular disease<br>
+    Malignancy<br>
+    Intestinal trauma<br>
+    Diverticular disease<br>
+    Radiation enteritis<br>
+    <br>
+    <span style="font-style: italic;">Clinical problems</span><br>
+    Enteric fistula<br>
+    Short-gut syndrome<br>
+    Abdominal abscess<br>
+    Motility disorders<br>
+    Intractable diarrhoea<br>
+    High-output stoma<br>
+    <br>
+    <span style="text-decoration: underline;"><span style="font-style:
+        italic;">Treatment</span></span><br>
+    Parenteral nutrition is likely to be required<br>
+    - as in critically ill with GI losses &gt;1 L/day.<br>
+    --&gt; remember that in the majority the cases of ongoing ileus are
+    confined to just stomach and colon<br>
+    --&gt; feed with nasojejunal or jejunostomy techniques.<br>
+    <br>
+    <hr style="width: 100%; height: 2px;"><span style="font-weight:
+      bold;">Nutrition in </span><a style="font-weight: bold;"
+      name="Injury"></a><span style="font-weight: bold;">Injury &amp;
+      SIRS</span><br>
+    <br>
+    <span style="font-style: italic; text-decoration: underline;">'Counter
+regulatory'
+
+
+      hormone release</span><br>
+    Noradernaline, adrenaline, GH, glucagon and cortisol increase, while
+    insulin falls.<br>
+    - moreover the normal anabolic effects of insulin are impaired
+    (insulin resistance; glucose intolerance)<br>
+    --&gt; increased availability of metabolic fuels.<br>
+    <br>
+    <span style="font-style: italic; text-decoration: underline;">Metobolism
+in
+
+
+      injury / surgery</span><br>
+    Modest increase in metabolic rate to 2000kcal/day.<br>
+    - <span style="font-style: italic;">lipid</span> becomes the major
+    fuel for energy production.<br>
+    - but protein breakdown and glycogenolysis and gluconeogenesis
+    result in more glucose availability for the brain, WBCs and healing
+    wounds.<br>
+    - glutamine release from skeletal muscle is essential for small
+    intestine and immune cells.<br>
+    There is no adaptive ketogenesis (due to insulin resistance)<br>
+    - hence protein is rapidly cannibalized to make up for lack of
+    ketone body use.<br>
+    --&gt; these changes will occur despite feeding.<br>
+    As the stress response wanes, insulin resistance abates<br>
+    --&gt; pt becomes anabolic.<br>
+    --&gt; eating and movement return, and muscle mass follows.<br>
+    <br>
+    <span style="font-style: italic; text-decoration: underline;">Metabolism
+in
+
+
+      sepsis / SIRS</span><br>
+    Complex; an exaggeration of the above (cytokines may contribute to
+    power of response).<br>
+    - pro-inflammatory cytokines TNF-alpha, IL-1,6 and 8 important
+    mediators, locally and via systemic circulation.<br>
+    - markedly increased metabolic rate (hypermetabolism)<br>
+    - markedly increased protein breakdown (up to 250g/day)<br>
+    --&gt; visceral protein may be removed, making the gut vulnerable<br>
+    - marked glucose intolerance; 'diabetes-like-state'<br>
+    --&gt; greater reliance on fat for energy production<br>
+    - marked fluid retention of up to 20L (compared to just 1-2L seen
+    after major surgery)<br>
+    <br>
+    <span style="font-style: italic; text-decoration: underline;">Energy
+      requirement</span><br>
+    These are difficult to measure and historically these pts have
+    received excess energy<br>
+    - excess glucose administration has led to fatty liver complications<br>
+    Very few pts need &gt;2500kcal/day<br>
+    - almost all can be fed adequately with 35kcal/kg body weight<br>
+    --&gt; note excess glucose (4kcal/g) can place demand on respiration
+    by increasing CO2 release requirement<br>
+    --&gt; hence <span style="font-style: italic;">lipid emulsions</span>
+    in TPN and lipid-rich feeding solutions (up to 50% of energy is
+    lipid)<br>
+    --&gt; this also allows a lower volume of feed for the same energy.<br>
+    --&gt; however there are concerns that too-high lipid concentrations
+    may result in immune and pulmonary problems (controversial)<br>
+    --&gt; added glucose also spares protein (although this is partly
+    blocked in the critically ill)<br>
+    No role for increased caloric delivery in the early phase of
+    critical illness<br>
+    - 2/3 or less of normal caloric goal may be desirable; otherwise may
+    lead to overfeeding and harm<br>
+    Early enteral feeding whenever possible<br>
+    - gut barrier function, reduced sepsis, maintenance of normal GI fx.<br>
+    <span style="font-style: italic;">Insulin resistance may require
+      insulin use</span><br>
+    - controlling blood glucose in this way may substantially improve
+    prognosis and reduce infective complications.<br>
+    <br>
+    <span style="text-decoration: underline;"><span style="font-style:
+        italic;">Protein requirement</span></span><br>
+    Note the necessity to supply appropriate balance of protein and
+    non-protein energy<br>
+    - otherwise protein is inefficiently degraded into glucose<br>
+    --&gt; this is 100-120kcal of non-protein energy for each gram of
+    nitrogen<br>
+    --&gt; 6.25g of protein provides 1g of nitrogen.<br>
+    - maintenance is 0.15g/kg/day of nitrogen<br>
+    --&gt; a depleted patient needs ~0.2g/kg/day of nitrogen<br>
+    However in the SIRS/sepsis pt, this will not be utilised due to
+    metabolic response<br>
+    --&gt; increased urea production and nitrogen excretion<br>
+    --&gt; may lose up to 3g/kg/day of nitrogen<br>
+    <span style="font-style: italic;">Although it is not possible to
+      balance protein in the septic pt, feed them it anyway.<br>
+      - </span>it may attenuate the negative balance.<br>
+    --&gt; treat the underlying cause and it will go away.<br>
+    <br>
+    <span style="text-decoration: underline;"><span style="font-style:
+        italic;">Trace elements</span></span><br>
+    <span style="font-style: italic;">Zinc</span> <br>
+    Deficit may occur in depleted stressed patients<br>
+    Causes apathy, depression, rash, diarrhoea and alopecia<br>
+    100umol/day is enough.<br>
+    <span style="font-style: italic;">Selenium<br>
+    </span>An antioxidant in glutathione peroxidase<br>
+    Often deficient in critically ill.<br>
+    If prolonged can cause irreversible cardiomyopathy<br>
+    0.4umol/day is usually enough<br>
+    <span style="font-style: italic;">Vitamins</span><br>
+    Think of thiamine in the alcoholic<br>
+    Vitamin C is difficult to assess but add if in doubt.<br>
+    <hr style="width: 100%; height: 2px;"><span style="font-weight:
+      bold;"><a name="Assessing_Weight_Chan"></a>Assessing Nutrition</span><br>
+    &nbsp;<span style="font-style: italic; text-decoration: underline;"><br>
+      PEM often goes unrecognised in surgical patients</span><br>
+    - In vivo neutron activation analysis (IVNAA) is the benchmark to
+    evaluate clinical nutrition assessment.<br>
+    <br style="font-style: italic;">
+    <span style="font-style: italic;"><span style="text-decoration:
+        underline;">Body weight</span><br>
+    </span>Still the most useful objective clinical marker of nutrition<br>
+    - use BMI (kg/m^2); how much, and over how long?<br>
+    --&gt; rapid = more likely organic disease<br>
+    --&gt; BMI&lt;18.5 and/or unexplained recent loss of &gt;10% weight
+    is a marker of undernutrition risk.<br>
+    --&gt; BMI&lt;16 suggests gross malnutrition.<br>
+    <br>
+    <span style="font-style: italic; text-decoration: underline;">BMI</span><br>
+    weight <br>
+    20-25=normal<br>
+    &lt;16=gross malnutrition<br>
+    &gt;30=sig. obesity<br>
+    <br>
+    <span style="font-style: italic; text-decoration: underline;">Anthropometric
+
+
+      Measurements</span><br>
+    Skinfold thickness and mid-arm circumference<br>
+    --&gt; allow estimation of fat &amp; protein reserve<br>
+    - but inaccurate in indivuals, particularly in the critically ill.<br>
+    <br>
+    <span style="font-style: italic; text-decoration: underline;">Others</span><br>
+    <span style="font-style: italic;">Functional studies</span><br>
+    Eg grip strength<br>
+    - predictive of muscle loss<br>
+    - but little clinical value.<br>
+    <span style="font-style: italic;">Indirect calorimetry</span><br>
+    - using a bedside 'metabolic cart' involving O2 / CO2 variables<br>
+    - good but expensive beyond routine clinical use.<br>
+    <br>
+    <span style="font-style: italic; text-decoration: underline;">Subjective
+global
+
+
+      assessment</span><br>
+    A six-point scale equivalent to most sophisticated body composition
+    analysis or biochemical assessments of nutrient status.<br>
+    <span style="font-style: italic;">Wight change</span>: 6mo / 2wks<br>
+    <span style="font-style: italic;">Dietary intake</span>: unchanged,
+    suboptimal, starved<br>
+    - difficult to gauge without objective diary-keeping.<br>
+    - few disorders have weight loss &amp; good appetite (eg thyrotox,
+    DM, steatorrhoea)<br>
+    <span style="font-style: italic;">GI symptoms</span>: anorexia,
+    n&amp;v, diarrhoea<br>
+    <span style="font-style: italic;">Functional capacity</span>:
+    normal, suboptimal, ambulatory, bedridden<br>
+    <span style="font-style: italic;">Stress</span>: nil, minimal, high<br>
+    <span style="font-style: italic;">Physical signs</span>: loss of
+    fat/muscle, oedema, mucosa lesions.<br>
+    <br>
+    <span style="text-decoration: underline;"><span style="font-style:
+        italic;">Laboratory measures</span></span><br>
+    <span style="font-style: italic;">Eg albumin, lymphocyte count</span><br>
+    - indicates severity of process leading to malnutrition rather than
+    its degree<br>
+    - eg in pure starvation, albumin does not drop until just before
+    death at six weeks<br>
+    - vs in sepsis it can fall to 20 within 2 days (partly
+    redistribution)<br>
+    <span style="font-style: italic;">Electrolytes / trace elements
+      monitoring</span><br>
+    - this is very useful, though Na+/K+ balance may be very difficult
+    in the critically ill<br>
+    - estimating urinary nitrogen is not useful<br>
+    - other tests may be done for specific deficiencies, eg vit K, FBC
+    for B12 &amp; folate<br>
+    <br>
+    <span style="font-style: italic; text-decoration: underline;">Clinical
+
+
+      Assessment</span><br>
+    Careful hx and exam:<br>
+    - ?early satiety, aesthenia, anaemia, oedema.<br>
+    <span style="font-style: italic;">Simply determine the likelihood
+      they need nutritional support and provide it.<br>
+    </span>- do this twice-weekly.<span style="font-style: italic;"><br>
+    </span>
+    <hr style="width: 100%; height: 2px;"><span style="font-weight:
+      bold;"><a name="Weight_Loss_Causes"></a>Weight Loss Causes</span><br>
+    <br>
+    Besides starvation, surgery and sepsis contributes a strong systemic
+    metabolic response that requires nutritional attention.<br>
+    <br>
+    <span style="font-style: italic;">Malignancy</span><br>
+    - particularly GI and lung cancer<br>
+    - less common in colorectal Ca before hepatic mets<br>
+    - malignant ascites may mask weight loss.<br>
+    - also seen in 'B' lymphoma symptoms<br>
+    - and renal adenoCa<br>
+    ?latter two related to pro-inflammatory cytokines.<br>
+    <br>
+    <span style="font-style: italic;">Endocrine</span><br>
+    - DM: ?glucose in urine<br>
+    - rarely in phaeo<br>
+    - thyrotoxicoses: hearty appetite<br>
+    - adrenal insufficiency<br>
+    <br>
+    <span style="font-style: italic;">GI</span><br>
+    - persistent D&amp;V<br>
+    - gastric outlet obstruction<br>
+    - gastrectomy / dumping pts.<br>
+    - chronic diarrhoea eg IBD<br>
+    - malabsorption eg coeliacs with steatorrhoea, being more prominent
+    in chronic pancreatitis<br>
+    <br>
+    <span style="font-style: italic;">Infections</span><br>
+    HIV<br>
+    TB<br>
+    <br>
+    <span style="font-style: italic;">Psych</span><br>
+    Anorexia.<br>
+    <hr style="width: 100%; height: 2px;"><span style="font-weight:
+      bold;"><a name="Weight_Gain"></a>Weight Gain</span><br>
+    <br>
+    Usually <span style="font-style: italic;">over-eating </span>and<span
+      style="font-style: italic;"> lack of exercise</span><br>
+    Substantial mortality associated.<br>
+    Other causes should be considered, eg:<span style="font-style:
+      italic;"><br>
+      Endocrine<br>
+      hypothyroidism<br>
+      Cushings<br>
+    </span>
+    <hr style="width: 100%; height: 2px;"><a name="Treating_Weight_Loss"></a><span
+      style="font-weight: bold;">Treating Nutrition Deficit</span><br>
+    <a href="#Make">Intro</a><br>
+    <a href="#Algorithm">Algorithm</a><br>
+    <a href="#Enteral">Enteral Feeding</a><br>
+    <a href="#Parenteral">Parenteral Feeding</a><br>
+    <a href="#Monitoring">Monitoring Feeding</a><br>
+    <a href="#Prophylactic">Prophylactic Feeding</a><br>
+    <br>
+    <a name="Make"></a><span style="font-style: italic; text-decoration:
+      underline;">Make the diagnosis</span><br style="font-style:
+      italic;">
+    <span style="font-style: italic;">Treat the underlying condition</span><br>
+    1/3 of pts enter hospital malnourished<br>
+    2/3 leave hospital malnourished.<br>
+    - is the food poor quality?<br>
+    - do the pts consume their food?<br>
+    <br>
+    <span style="font-style: italic; text-decoration: underline;">Indications</span><br>
+    Any pt unable to eat for more than 3-4 days.<br>
+    <br>
+    <span style="text-decoration: underline;"><span style="font-style:
+        italic;"><a name="Algorithm"></a>Algorithm</span></span><br>
+    <span style="text-decoration: underline;"><img alt="IMAGE NOT
+        AVAILABLE ON YOUR SYSTEM" src="FeedingAlgorithm.jpg"
+        style="width: 481px; height: 761px;"></span><br>
+    <br>
+    <span style="font-style: italic; text-decoration: underline;">Supplementation
+
+
+      PO</span><br>
+    Preferred route if GI tract is working safely.<br>
+    - not good when stimulation of secretory fx undesirable, eg in
+    fistulae.<br>
+    Easy, safe, cheap and physiologically better.<br>
+    - preserves barrier function of gut <br>
+    - and mass / surface area of the small bowel<br>
+    - liver dysfunction, hyperglycaemia and sepsis (esp pulmonary) are
+    less common<br>
+    Sip feeds (typically 200kcal and 2gN/200ml) are useful in anorexic
+    pts<br>
+    - may reduce hospital stay and recovery time<br>
+    --&gt; but their use may <span style="font-style: italic;">replace</span>
+    food intake<br>
+    <br>
+    <a name="Enteral"></a><span style="font-style: italic;
+      text-decoration: underline;">Enteral Nutritional support</span><br>
+    Useful, relatively safe, easy and cheap, and good for gut.<br>
+    <span style="font-style: italic;"><br>
+      <span style="font-style: italic;">Indications</span></span><br>
+    Moderate-to-severe PEM with inadequate oral intake &gt;3days<br>
+    Dysphagia for all but clear fluids<br>
+    Massive entercetomy<br>
+    Distal enterocutaneous fistulae<br>
+    After major injuyr in pts where feeding will be prolonged<br>
+    Prolonged recovery<br>
+    Some pts with inflammatory bowel disease<br>
+    <br>
+    <span style="font-style: italic;">Contraindications</span><br>
+    Complete SBO<br>
+    Inadequately treated shock<br>
+    Severe diarrhoea<br>
+    Proximal small intestinal failure<br>
+    Severe pancreatitis<span style="font-style: italic;"><span
+        style="font-style: italic;"></span><br>
+      <br>
+      <span style="font-style: italic;">Complications</span></span><br>
+    (From intubation)<br>
+    - fistula, infection, peritonitis, SBO, tube blockage<br>
+    (From delivery)<br>
+    - aspiration, intolerance, diarrhoea<span style="font-style:
+      italic;"><span style="font-style: italic;"></span><br>
+      <br>
+      Nasogastric</span><br>
+    Easy, but gastric function is often last to recover after surgery.<br>
+    --&gt; can predispose to vomiting or aspiration; keep pt head up and
+    only perform if GCS adequate<br>
+    - the stomach can produce up to 2.5L of secretions every day
+    (+receives 1500ml saliva)<br>
+    - normal residual volume (balance b/n secretion and emptying &amp;
+    absorption) is 50-100ml<br>
+    - simply freely suctioning can lead to a large fluid loss.<br>
+    --&gt; spigotting and aspirating at 2/4/6 hr intervals will give an
+    indication of whether the stomach is emptying.<br>
+    - if &lt;200ml returned, the risk is fairly low.<br>
+    - can commence via a wide-bore tube, but a fine-bore tube is better
+    toelrated once the need for drainage has passed.<br>
+    <br>
+    <span style="font-style: italic;">Nasoduodenal/Nasojejunal</span><br>
+    A weighted tube, best inserted during surgery.<br>
+    - otherwise fluoroscopy can be used, or the 'Bengmark' tube, which
+    can be propelled by peristalsis<br>
+    --&gt; ensure radiography before starting feeding so as not to fill
+    the lung with food.<br>
+    <br>
+    <span style="font-style: italic;">Tube enterostomy</span><br>
+    Consider placement of an enterostomy tube in major GI surgery, eg
+    Whipple's, major trauma, esophagectomy.<br>
+    - the Stamm and Witzel techniques are used<br>
+    - the underlying bowel is sutured to the abdo wall<br>
+    - percutaneous techniques are used when laparotomy is not indicated<br>
+    Complications include leak and peritonitis, SBO due to tube
+    migration, and volvulus around the site.<br>
+    <br>
+    <span style="font-style: italic;">Initiation</span><br>
+    Begin gradually, but don't let it stretch out for weeks<br>
+    - common problems are diarrhoea &amp; large residuals.<br>
+    --&gt; metoclopramide can help enhance gastric emptying<br>
+    A standard isocaloric (1kcal/ml) is adequate for most<br>
+    --&gt; start at 20ml/hr for six hrs, then increase by 20ml/hr for 6
+    hrs and so on.<br>
+    --&gt; aspirate before each increment (for gastric feeds) to check
+    the residual<br>
+    - dilution is unnecessary and intrinsic due to gut secretions anyway<br>
+    --&gt; if villous atrophy is suspected, start lower, go slow.<br>
+    <br>
+    <span style="font-style: italic;">Diarrhoea</span><br>
+    Usually due to antibiotics depleting gut flora<br>
+    - stop these and it will often resolve rapidly<br>
+    Villous atrophy and resection and more difficult<br>
+    - introducing small volume feeds early can help prevent villous
+    atrophy<br>
+    - glutamine and arginine are critical for enterocytes; coloncytes
+    principally need short-chain fatty acids<br>
+    --&gt; however it is unclear if food fortified with these reduces
+    diarrhoea or not<br>
+    Reduce risk of diarrhoea by introducing food slowly<br>
+    <span style="font-style: italic;">If it does occur</span>:<br>
+    - reduce feeding to 20ml/hr<br>
+    - exclude infection eg clostridium difficile (or infx in the feed
+    itself)<br>
+    - consider jejunal feeding<br>
+    - consider omeprazole in short gut syndrome (reduces gastric
+    hypersecretion)<br>
+    - treat with loperamide<br>
+    - use fibre or glutamine-containing food (unproben)<br>
+    - consider IV albumin if thought to be contributing to malabsorption
+    (unproven)<br>
+    <br>
+    <a name="Parenteral"></a><span style="font-style: italic;
+      text-decoration: underline;">Parenteral nutrition</span><br>
+    <br>
+    <span style="font-style: italic;">Indications</span><br>
+    Obstructions not easily fixed or who need preop nutrition<br>
+    Short gut syndrome (&lt;300cm functional small intestine)<br>
+    - often need at least temporary TPN<br>
+    - often adaptation will eventually permit enteral nutrition alone<br>
+    - if &lt;100cm, often need lifelong TPN<br>
+    Proximal intestinal fistulae<br>
+    Refractory infalmmatory disease of the GI tract<br>
+    Inability to use the GI tract for other reasons<br>
+    <br>
+    <span style="font-style: italic;">Administration</span><br>
+    A peripheral fine bore cannula can be used for short periods<br>
+    - eg a 22g changed every 24 hours.<br>
+    --&gt; high incidence of thrombophlebitis<br>
+    - reduced by ensuring that hypertonic glucose is kept low, and by
+    adding heparin and hydrocortisone.<br>
+    --&gt; venodilation by a GTN patch over the vein can also work.<br>
+    Better to use a dedicated line at the sublavian (lower infection
+    rate) or jugular, tunneleled to position<br>
+    - ensuring tip in distal SVC ensures maximal mixing and reduces
+    thrombosis rate<br>
+    - avoid the femoral vein, as line complications are high.<br>
+    --&gt; maintain a high degree of suspicion in the pt who develops
+    signs of infection or deterioration without a clear explanation<br>
+    --&gt; infection rate should be &lt;6%<br>
+    Needs to be given at least 10d pre-op in malnourished for any
+    benefit to be seen.<br>
+    <br>
+    <span style="font-style: italic;">Complications</span><br>
+    (Catheter related)<br>
+    - blockage, thrombosis, migration, fracture, dislodgement,
+    infection, sepsis, endocarditis<br>
+    (Metabolic)<br>
+    - hyperglycaemia, deranged LFTs (?why / ?fat deposition),
+    hypoglycaemia, hyertrigylceridaemia, hyperchloraemic acidosis (too
+    much Cl added)<br>
+    <br>
+    <span style="font-style: italic;">Solution choice</span><br>
+    Most hospitals have ready compounded big-bags<br>
+    - provide calorie/nitrogen balance and lipid/glucose combination<br>
+    - should be 50% lipid, lipid is added last<br>
+    - substances such as Ca++ and Mg++ can cause 'cracking' of the
+    emulsion.&nbsp; Avoid.<br>
+    Infuse via a pump, usually continuously over 24 hrs.<br>
+    <br>
+    <span style="font-style: italic;">Novel substrates</span><br>
+    Glutamine, arginine, RNA, branched-chain amino acids, omega-3 fatty
+    acids are under research<br>
+    Clinical results of benefit are awaited.<br>
+    <br>
+    <span style="text-decoration: underline;"><span style="font-style:
+        italic;"><a name="Monitoring"></a>Monitoring</span></span><br>
+    Manage the ABCs / sepsis firts, nutrition is not immediately
+    necessary.<br>
+    It is exceedingly difficult to measure the nutritional status of the
+    critically ill<br>
+    - weight changes more often reflect fluid sequestration<br>
+    - changes in proteins can better reflect teh underlying process<br>
+    The techniques above may help.<br>
+    <br>
+    <span style="font-style: italic;">Daily (if stable)</span><br>
+    FBC, glucose<br>
+    Urea, creatinine, electrolytes<br>
+    <span style="font-style: italic;">Weekly (if stable)<br>
+    </span>Mg++, Ca++, PO4-<br>
+    Cl-, Albumin<br>
+    Bilirubin &amp; LFTs<br>
+    Prothrombin time<br>
+    <span style="font-style: italic;">Twice-monthly (if stable)</span><br>
+    B12 and folate<br>
+    Iron studies<br>
+    Cu++, Zn++, selenium<br>
+    Prealbumin, transferrin<br>
+    <br>
+    <span style="text-decoration: underline;"><span style="font-style:
+        italic;"><a name="Prophylactic"></a>Prophylactic Feeding</span></span><br>
+    Few scientific dat supports perioperative feeding<br>
+    - TPN <span style="font-style: italic;">increases</span> morbidity
+    in pts with mild-moderate malnutrition<br>
+    --&gt; only markedly malnourished pts should get TPN<br>
+    Even enteral feeding is not required for shorter than 7 day fasts
+    for most patients<br>
+    Pts with active infection will not benefit from preoperative
+    feeding.<br>
+    <hr style="width: 100%; height: 2px;"><span style="font-weight:
+      bold;">References</span><br>
+    CCrISP Manual<br>
+    Toouli<br>
+    <hr style="width: 100%; height: 2px;"><br>
+    <br>
+    <span style="font-style: italic;"></span>
+  </body>
+</html>

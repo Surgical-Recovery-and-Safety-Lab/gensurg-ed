@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+env/
+
+# Generated — rebuild with: python3 scripts/build_index.py
+app/search-index.json
+
+# Editor
+.vscode/
+.idea/
+*.swp
