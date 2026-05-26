@@ -1,0 +1,20 @@
+# Non-web files — excluded from Cloudflare Workers static asset upload
+node_modules/
+.git/
+.github/
+.claude/
+scripts/
+*.py
+*.sh
+*.md
+*.jsonc
+*.json5
+package.json
+package-lock.json
+wrangler.toml
+.gitignore
+.assetsignore
+.DS_Store
+.env*
+.dev.vars*
+.wrangler/
